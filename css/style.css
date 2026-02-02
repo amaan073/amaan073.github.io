@@ -233,6 +233,15 @@ body {
   transition: 0.5s ease-in-out;
 }
 
+/* Mobile Safari only */
+@supports (-webkit-touch-callout: none) {
+  @media (hover: none) and (pointer: coarse) {
+    .project-info {
+      opacity: 1 !important;
+    }
+  }
+}
+
 .project-link {
   min-width: 55px;
 }
